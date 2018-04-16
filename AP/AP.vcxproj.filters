@@ -13,5 +13,42 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\core">
+      <UniqueIdentifier>{05227bb6-8f04-4d05-afaa-fa28868ee012}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\core\gfs">
+      <UniqueIdentifier>{5f447d18-b705-4435-990c-033ea5495992}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\core">
+      <UniqueIdentifier>{5fb703aa-f6b7-456d-831e-a862e3339caa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\core\gfs">
+      <UniqueIdentifier>{e55324fb-2354-40e0-8679-b1ce2fcaf42e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="testCore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GFS2.cpp">
+      <Filter>Source Files\core\gfs</Filter>
+    </ClCompile>
+    <ClCompile Include="GFS.cpp">
+      <Filter>Source Files\core\gfs</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GFS2.h">
+      <Filter>Header Files\core\gfs</Filter>
+    </ClInclude>
+    <ClInclude Include="GFS.h">
+      <Filter>Header Files\core\gfs</Filter>
+    </ClInclude>
+    <ClInclude Include="GFS1.h">
+      <Filter>Header Files\core\gfs</Filter>
+    </ClInclude>
+    <ClInclude Include="GFS0.h">
+      <Filter>Header Files\core\gfs</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
