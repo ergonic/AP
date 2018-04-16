@@ -36,6 +36,9 @@
     <ClCompile Include="GFS.cpp">
       <Filter>Source Files\core\gfs</Filter>
     </ClCompile>
+    <ClCompile Include="GFS1.cpp">
+      <Filter>Source Files\core\gfs</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GFS2.h">
