@@ -15,6 +15,10 @@ int main() {
 	double ret = 0;
 	ret = gfs->gfs2[0].f(2, 4);
 
+
 	gfs_free(gfs);
+
+	system("pause");
+
 	return 0;
 }

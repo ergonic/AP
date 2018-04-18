@@ -7,7 +7,7 @@ typedef struct t_function1
 	double(*f)(double);
 } Function1;
 
-#define GFS1NUM 11
+#define GFS1NUM 12
 
 double gfs1_abs(double x);
 double gfs1_sin(double x);
@@ -20,3 +20,4 @@ double gfs1_ln(double x);
 double gfs1_log(double x);
 double gfs1_sigmoid(double x);
 double gfs1_sqrt(double x);
+double gfs1_prime(double x);

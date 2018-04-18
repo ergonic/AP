@@ -78,13 +78,37 @@ GFSALL* gfs_init() {
 	gfs->gfs1[10].name = "Sqrt";
 	gfs->gfs1[10].paramNum = 1;
 
+	gfs->gfs1[11].f = &gfs1_prime;
+	gfs->gfs1[11].name = "Prime";
+	gfs->gfs1[11].paramNum = 1;
+
+	//GFS0
+	gfs->gfs0 = (Function0*)malloc(sizeof(Function0) * GFS0NUM);
+	gfs->gfs0[0].f = &gfs0_euler;
+	gfs->gfs0[0].name = "Euler";
+	gfs->gfs0[0].paramNum = 0;
+
+	gfs->gfs0[1].f = &gfs0_minusOne;
+	gfs->gfs0[1].name = "MinusOne";
+	gfs->gfs0[1].paramNum = 0;
+
+	gfs->gfs0[2].f = &gfs0_one;
+	gfs->gfs0[2].name = "One";
+	gfs->gfs0[2].paramNum = 0;
+
+	gfs->gfs0[3].f = &gfs0_pi;
+	gfs->gfs0[3].name = "PI";
+	gfs->gfs0[3].paramNum = 0;
+
 	return gfs;
 }
 
 void gfs_free(GFSALL* gfs) {
 	
-	//free gfs2 members
+	//free gfs members
 	free(gfs->gfs2);
+	free(gfs->gfs1);
+	free(gfs->gfs0);
 
 	//free gfs
 	free(gfs);

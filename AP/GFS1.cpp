@@ -34,3 +34,14 @@ double gfs1_sigmoid(double x) {
 double gfs1_sqrt(double x) {
 	return sqrt(x);
 }
+double gfs1_prime(double x) {
+	int size = 24;
+	double prime[] = { 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97 };
+	if (x < 0) {
+		return prime[0];
+	}
+	if (x > 24) {
+		return prime[size];
+	}
+	return prime[(int)x];
+}
